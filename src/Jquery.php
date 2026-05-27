@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Vigihdev\WpAssets;
+namespace VigihdevWP\Assets;
 
 use VigihdevWP\Assets\Contracts\Able\PublishAbleInterface;
 use VigihdevWP\Assets\Contracts\JqueryInterface;
