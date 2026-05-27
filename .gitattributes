@@ -1,0 +1,8 @@
+.gitignore export-ignore
+.gitattributes export-ignore
+.github export-ignore
+.env export-ignore
+tests export-ignore
+config export-ignore
+storage export-ignore
+phpunit.xml export-ignore

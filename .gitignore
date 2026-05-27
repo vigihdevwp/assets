@@ -1,0 +1,21 @@
+# Dependency directories dot
+.amazonq
+.vscode
+.trae
+.marscode
+.DS_Store
+.phpunit.cache
+phpunit.xml
+config
+.env
+nodemon.json
+package-lock.json
+package.json
+node_modules
+vendor
+/tests
+composer.lock
+wp-bootstrap.php
+dev.php
+scripts
+local-dev

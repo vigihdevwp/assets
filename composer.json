@@ -1,0 +1,58 @@
+{
+    "name": "vigihdevwp/assets",
+    "description": "Vigih Dev Wp Assets",
+    "homepage": "https://github.com/vigihdevwp/assets",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "wordpress",
+        "seo",
+        "plugin",
+        "vigihdevwp",
+        "Assets"
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Vigih Dev",
+            "email": "vigihdevwp@gmail.com",
+            "role": "developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://satiswp.id"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "symfony/filesystem": "^6.4",
+        "vigihdev/support": "dev-main"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "vigihdevwp/kernel": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "VigihdevWP\\Assets\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "VigihdevWP\\Assets\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "process-timeout": 0,
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "dev": "php -S localhost:5377 local-dev/index.php"
+    }
+}
