@@ -47,7 +47,10 @@ final class JsModule implements PublishAbleInterface
 
         add_filter('script_loader_tag', function ($tag, $handle, $src) use ($hash) {
             if (is_string($handle) && substr($handle, 0, strlen((string)$hash)) === $hash) {
-                return str_replace('text/javascript', 'module', $tag);
+                if (preg_match('/type=["\']+text\/javascript["\']+/i', $tag)) {
+                    return str_replace('text/javascript', 'module', $tag);
+                }
+                return str_replace('<script', '<script type="module" ', $tag);
             }
             return $tag;
         }, 10, 3);
